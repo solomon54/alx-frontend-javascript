@@ -14,9 +14,9 @@ const director1 = {
     numberOfReports: 5,
 };
 console.log(director1);
+// Function implementing the interface
 function printTeacher(firstName, lastName) {
-    firstName = firstName.charAt(0);
-    return `${firstName}. ${lastName}`;
+    return `${firstName.charAt(0)}. ${lastName}`;
 }
 console.log(printTeacher("Solomon", "Tsehay"));
 export {};
