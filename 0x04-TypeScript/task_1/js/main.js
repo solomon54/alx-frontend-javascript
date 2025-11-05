@@ -14,9 +14,12 @@ const director1 = {
     numberOfReports: 5,
 };
 console.log(director1);
-function printTeacher({ firstName, lastName, }) {
-    return `${firstName}. ${lastName}`;
+// Function declaration
+function printTeacher(firstName, lastName) {
+    return `${firstName.charAt(0)}. ${lastName}`;
 }
+// Example usage
+console.log(printTeacher("John", "Doe")); // J. Doe
 console.log(printTeacher("Solomon", "Tsehay"));
 export {};
 //# sourceMappingURL=main.js.map
