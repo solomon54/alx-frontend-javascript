@@ -6,5 +6,13 @@ const teacher1 = {
     contract: "6 months",
 };
 console.log(teacher1);
+const director1 = {
+    firstName: "Mola",
+    lastName: "Arega",
+    fullTimeEmployee: true,
+    location: "Bahir Dar",
+    numberOfReports: 5,
+};
+console.log(director1);
 export {};
 //# sourceMappingURL=main.js.map

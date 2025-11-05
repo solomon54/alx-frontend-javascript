@@ -3,7 +3,8 @@ export interface Teacher {
     readonly lastName: string;
     fullTimeEmployee: boolean;
     location: string;
-    yearOfExperiance?: number;
+    yearsOfExperiance?: number;
+    yearsOfExperience?: number;
     [key: string]: any;
 }
 //# sourceMappingURL=main.d.ts.map
