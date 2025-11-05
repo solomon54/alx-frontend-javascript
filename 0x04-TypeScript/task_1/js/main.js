@@ -14,7 +14,7 @@ const director1 = {
     numberOfReports: 5,
 };
 console.log(director1);
-function printTeacher(firstName, lastName) {
+function printTeacher({ firstName, lastName, }) {
     firstName = firstName.charAt(0).toUpperCase();
     return `${firstName}. ${lastName}`;
 }
