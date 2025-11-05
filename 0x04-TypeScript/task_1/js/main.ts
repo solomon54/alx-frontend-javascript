@@ -33,14 +33,8 @@ console.log(director1);
 interface printTeacherFunction {
   (firstName: string, lastName: string): string;
 }
-function printTeacher({
-  firstName,
-  lastName,
-}: {
-  firstName: string;
-  lastName: string;
-}): string {
-  firstName = firstName.charAt(0).toUpperCase();
+function printTeacher(firstName: string, lastName: string): string {
+  firstName = firstName.charAt(0);
   return `${firstName}. ${lastName}`;
 }
 
