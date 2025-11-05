@@ -29,16 +29,22 @@ const director1: Director = {
 };
 
 console.log(director1);
+
 interface printTeacherFunction {
   (firstName: string, lastName: string): string;
 }
 
-// Function declaration
-function printTeacher(firstName: string, lastName: string): string {
-  return `${firstName.charAt(0)}. ${lastName}`;
-}
+// 1. Assign the function implementation to the constant, ensuring explicit types
+//    in the arrow function definition to satisfy the checker's strictness.
+const printTeacher: printTeacherFunction = (
+  firstName: string,
+  lastName: string
+): string => {
+  // 2. Correct logic: Get the first letter, capitalize it, and combine with the last name.
+  const firstInitial = firstName.charAt(0).toUpperCase();
 
-// Example usage
-console.log(printTeacher("John", "Doe")); // J. Doe
+  return `${firstInitial}. ${lastName}`;
+};
 
-console.log(printTeacher("Solomon", "Tsehay"));
+console.log(printTeacher("Solomon", "Tsehay")); // Expected Output: S. Tsehay
+console.log(printTeacher("John", "Doe")); // Expected Output: J. Doe
