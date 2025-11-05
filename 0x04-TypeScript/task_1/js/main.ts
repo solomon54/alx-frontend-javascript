@@ -3,7 +3,7 @@ export interface Teacher {
   readonly lastName: string;
   fullTimeEmployee: boolean;
   location: string;
-  yearOfExperiance?: number;
+  yearsOfExperiance?: number;
   [key: string]: any;
 }
 
