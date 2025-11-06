@@ -1,0 +1,55 @@
+// Interfaces
+// Classes
+class Director {
+    workFromHome() {
+        return "Director";
+    }
+    getCoffeeBreak() {
+        return "Getting a coffee break";
+    }
+    workDirectorTasks() {
+        return "Getting to director tasks";
+    }
+}
+class Teacher {
+    workFromHome() {
+        return "Teacher";
+    }
+    getCoffeeBreak() {
+        return "Cannot have a break";
+    }
+    workTeacherTasks() {
+        return "Getting to work";
+    }
+}
+// Function to create employee
+function createEmployee(salary) {
+    salary = typeof salary === "number" ? salary : parseInt(salary);
+    if (salary < 500) {
+        return new Teacher();
+    }
+    else {
+        return new Director();
+    }
+}
+// Example usage
+const emp1 = createEmployee(200);
+console.log(emp1.workFromHome()); // Cannot work from home
+const emp2 = createEmployee(1000);
+console.log(emp2.workFromHome()); // Working from home
+const emp3 = createEmployee("$500");
+console.log(emp3.workFromHome()); // Working from home
+// Function using the literal type
+function teachClass(todayClass) {
+    if (todayClass === "Math") {
+        return "Teaching Math";
+    }
+    else {
+        return "Teaching History";
+    }
+}
+// Example usage
+console.log(teachClass("Math")); // Teaching Math
+console.log(teachClass("History")); // Teaching History
+export {};
+//# sourceMappingURL=main.js.map
