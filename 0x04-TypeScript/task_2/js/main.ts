@@ -65,7 +65,7 @@ console.log(emp3.workFromHome()); // Working from home
 type Subjects = "Math" | "History";
 
 // Function using the literal type
-function teachClass(todayClass: Subjects): string {
+function teachClass(todayClass:Subjects): string {
   if (todayClass === "Math") {
     return "Teaching Math";
   } else {
