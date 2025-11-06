@@ -52,7 +52,7 @@ interface StudentClass {
 }
 
 // Class implementation
-class StudentClass implements StudentClass {
+class StudentClass {
   constructor(private firstName: string, private lastName: string) {}
 
   workOnHomework(): string {
