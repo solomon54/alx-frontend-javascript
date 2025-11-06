@@ -43,15 +43,14 @@ class Teacher implements TeacherInterface {
 }
 
 // Function to create employee
-
 function createEmployee(salary: number | string): Director | Teacher {
-  if (typeof salary === "number" && salary < 500) {
+  salary = typeof salary === "number" ? salary : parseInt(salary);
+  if (salary < 500) {
     return new Teacher();
   } else {
     return new Director();
   }
 }
-
 // Example usage
 const emp1 = createEmployee(200);
 console.log(emp1.workFromHome()); // Cannot work from home

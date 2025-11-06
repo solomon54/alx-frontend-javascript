@@ -24,7 +24,8 @@ class Teacher {
 }
 // Function to create employee
 function createEmployee(salary) {
-    if (typeof salary === "number" && salary < 500) {
+    salary = typeof salary === "number" ? salary : parseInt(salary);
+    if (salary < 500) {
         return new Teacher();
     }
     else {
