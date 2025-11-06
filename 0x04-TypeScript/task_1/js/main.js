@@ -31,6 +31,7 @@ class StudentClass {
         return "Currently working";
     }
     displayName() {
+        this.lastName;
         return this.firstName;
     }
 }

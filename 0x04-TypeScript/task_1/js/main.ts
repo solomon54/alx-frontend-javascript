@@ -42,17 +42,17 @@ console.log(printTeacher("Solomon", "Tsehay"));
 
 // Interface describing the constructor
 interface StudentConstructor {
-  new (firstName: string, lastName: string): StudentClassInterface;
+  new (firstName: string, lastName: string): StudentClass;
 }
 
 // Interface describing the class
-interface StudentClassInterface {
+interface StudentClass {
   workOnHomework(): string;
   displayName(): string;
 }
 
 // Class implementation
-class StudentClass implements StudentClassInterface {
+class StudentClass implements StudentClass {
   constructor(private firstName: string, private lastName: string) {}
 
   workOnHomework(): string {
@@ -60,6 +60,7 @@ class StudentClass implements StudentClassInterface {
   }
 
   displayName(): string {
+    this.lastName;
     return this.firstName;
   }
 }
