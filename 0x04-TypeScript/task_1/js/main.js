@@ -14,10 +14,10 @@ const director1 = {
     numberOfReports: 5,
 };
 console.log(director1);
-function printTeacher({ firstName, lastName, }) {
+function printTeacher(firstName, lastName) {
     firstName = firstName.charAt(0);
     return `${firstName}. ${lastName}`;
 }
-console.log(printTeacher({ firstName: "Solomon", lastName: "Tsehay" }));
+console.log(printTeacher("Solomon", "Tsehay"));
 export {};
 //# sourceMappingURL=main.js.map
