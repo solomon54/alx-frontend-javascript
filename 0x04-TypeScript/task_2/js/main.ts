@@ -60,3 +60,19 @@ console.log(emp2.workFromHome()); // Working from home
 
 const emp3 = createEmployee("$500");
 console.log(emp3.workFromHome()); // Working from home
+
+// String literal type
+type Subjects = "Math" | "History";
+
+// Function using the literal type
+function teachClass(todayClass: Subjects): string {
+  if (todayClass === "Math") {
+    return "Teaching Math";
+  } else {
+    return "Teaching History";
+  }
+}
+
+// Example usage
+console.log(teachClass("Math")); // Teaching Math
+console.log(teachClass("History")); // Teaching History

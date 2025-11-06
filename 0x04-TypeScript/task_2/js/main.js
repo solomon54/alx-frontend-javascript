@@ -39,5 +39,17 @@ const emp2 = createEmployee(1000);
 console.log(emp2.workFromHome()); // Working from home
 const emp3 = createEmployee("$500");
 console.log(emp3.workFromHome()); // Working from home
+// Function using the literal type
+function teachClass(todayClass) {
+    if (todayClass === "Math") {
+        return "Teaching Math";
+    }
+    else {
+        return "Teaching History";
+    }
+}
+// Example usage
+console.log(teachClass("Math")); // Teaching Math
+console.log(teachClass("History")); // Teaching History
 export {};
 //# sourceMappingURL=main.js.map
